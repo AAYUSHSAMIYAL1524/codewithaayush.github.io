@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist v-classresp">
+            <div class="logo"><img src="images/Screenshot (99).png" alt="logo"></div>
+            <li><a href="../sql website/new_home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="../sql website/programs2.html">DBMS</a></li>
+            <li><a href="#contact">Contact us</a></li>
+
+        </ul>
+        <div class="rightnav v-classresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm" >search</button>
+        </div>
+<div class="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">our bca practical is here </p>
+                <p class="text-small">here you can see our programming </p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS" style="color: aliceblue;">subscribe</a></button>
+                    <button class="btn"><a href="https://www.youtube.com/watch?v=s9201lcULB4" style="color: aliceblue;">sql video</a></button>
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <img src="images/clouses.png" alt="LAPTOP IMAGE">
+
+
+            </div>
+        </div>
+    </section>
+<section class="section"id="services">
+    <div class="para">
+    <p class="sectiontag text-big">SQL CLAUSES </p><br>
+    <p class="sectionsubtag text-small">
+        MySQL queries are SQL functions that help us to access a particular set of records from a database table. We can request any information or data from the database using the clauses or, let's say, SQL statements. For example, SQL Clauses receives a conditional expression that can be a column name or valid term involving columns where this supports the MySQL functions to calculate the result values for a table in the database.<br><br><br>
+
+Some SQL Clauses in MySQL Server are :-  
+
+<br>
+        <a href="#where"> 1. WHERE<BR></a>
+           <a href="#group_by">2.GROUP_BY <BR></a>
+            <a href="#having">3. HAVING<BR></a> 
+                <a href="#order_by">4. ORDER_BY<BR></a> 
+             
+        </p>
+</div>
+          <div class="thumbnail">
+<img src="images/clouses.png" alt="laptop image" class="imgfluid" >
+</div>
+
+</section>
+
+
+<section class="section">
+    <div class="para">
+    <p class="sectiontag text-big"><a name="where">1. WHERE</a></p>
+    <p class="sectionsubtag text-small"><br>
+        In MySQL, we use the SQL SELECT statement to select data from a table in the database. Here, the WHERE clause allows filtering certain records that exactly match a specified condition. Thus, it helps us to fetch only the necessary data from the database that satisfies the given expressional conditions. The WHERE clause is used with SELECT statement as well as with UPDATE, DELETE type statements and aggregate functions to restrict the no. of records to be retrieved by the table. We can also use logical or comparison operators such as LIKE,<,>,=, etc. with WHERE clause to fulfill certain conditions.<br><br><br>
+
+syntax:-<br><br>
+
+<b>SELECT Column1,...ColumnN From Table_name WHERE [condition];<br><br></b>
+
+Here ais a example  to further illustrate the where clause statement.<br>
+
+        
+        <img src="images/where.png" alt="laptop image"  >
+        <br>
+        <br>
+       
+        
+
+
+    </p>
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="group_by">2. GROUP_BY</a></p>
+    <p class="sectionsubtag text-small"><br>
+        The GROUP BY clause is used to group rows that have the same values in the result set. Like if we find the names of books from the table grouped by their ID.<br>
+<br>
+syntax:<br><br>
+
+<b>SELECT column1, function_name(column2)
+    FROM table_name
+    WHERE condition
+    GROUP BY column1, column2
+    ORDER BY column1, column2;</b><br><br><br>
+This clause is generally used with aggregate functions that allow grouping the query result rows by multiple columns. The aggregate functions are COUNT, MAX, MIN, SUM, AVG, etc.
+
+We have the following example:<br><br>
+
+
+<br><br><br>
+
+
+        <img src="images/groupby.png" alt="laptop image" ><br><br><br>
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="having">3. HAVING</a></p>
+    <p class="sectionsubtag text-small"><br>
+        Actually, this clause is introduced to apply functions in the query with the WHERE clause. In SQL, the HAVING clause was added because the WHERE clause could not be applied with aggregate functions.<br><br>
+
+       syntax:<br><br>
+        
+        <b>SELECT Column FROM Table WHERE condition GROUP BY Column HAVING condition [ORDER BY Column];<b><br><br></b>
+        We can also use the HAVING clause with logical operators such as OR and AND.<br><br><br><b>
+
+The syntax for writing an having clauses is as follows :<br><br><br>
+
+
+
+        <img src="images/having clauses.png" alt="laptop image"><br>
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="order_by">4. ORDER_BY</a></p>
+    <p class="sectionsubtag text-small"><br>
+        The ORDER BY clause is used in SQL for sorting records. It is used to arrange the result set either in ascending or descending order. When we query using SELECT statement the result is not in an ordered form. Hence, the result rows can be sorted when we combine the SELECT statement with the ORDER BY clause.<br><br><br>
+
+        syntax:<br><br><br>
+        
+        <b>SELECT column1, …,columnN FROM TableName ORDER BY column1, . . .column  ASC|DESC;</b><br><br>
+        We add ASC for ascending and DSC for descending with the column name in the query to display the result rows in an ordered form.<br><br><br>
+
+
+
+
+        <img src="images/orderby.png" alt="laptop image"><br>
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section class="contact" id="contact" >
+<h3>contact us</h3>
+<a href="https://www.instagram.com/anshusinghsamiyal/"><img src="images/instagram.jpeg" width="150" height="94"></a>&nbsp;
+
+<a href="https://www.facebook.com/anshu.samiyal"><img src="images/facebook.jpeg" width="150" height="94"></a>
+<br>
+instagram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facebook
+    
+</div>   
+</section>
+
+
+
+
+</section>
+<a name="about">
+    <footer>
+        <footer class="footer background">
+        copyright &copy; 2023 www.samiyalsql.com - all right reserved
+        
+        </footer></a>
+    <Script src="JS/responsive.js"></Script>
+
+
+</body>
+
+</html>

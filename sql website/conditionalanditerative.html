@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar background hnavresp">
+        <ul class="navlist v-classresp">
+            <div class="logo"><img src="images/Screenshot (99).png" alt="logo"></div>
+            <li><a href="../sql website/new_home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="../sql website/programs2.html">DBMS</a></li>
+            <li><a href="#contact">Contact us</a></li>
+
+        </ul>
+        <div class="rightnav v-classresp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm" >search</button>
+        </div>
+<div class="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">our bca 4 practical is here </p>
+                <p class="text-small">here you can see our  programming </p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS" style="color: aliceblue;">subscribe</a></button>
+                    <button class="btn"><a href="https://www.youtube.com/watch?v=s9201lcULB4" style="color: aliceblue;">sql video</a></button>
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <img src="images/data-centerserver.jpg" alt="LAPTOP IMAGE">
+
+
+            </div>
+        </div>
+    </section>
+<section class="section"id="services">
+    <div class="para">
+    <p class="sectiontag text-big">conditional control and iterative control</p><br>
+    <p class="sectionsubtag text-small"><br>
+      <br> Decision-making structures require that the programmer specify one or more conditions to be evaluated or
+       tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, 
+       other statements to be executed if the condition is determined to be false.<br><br>
+
+some contorl statements are:-<br>
+ 
+
+<br>
+        <a href="#if"> 1.  if then<BR></a>
+           <a href="#ifelse">2. if-then-else <BR></a>
+            <a href="#ifelsethen">3. if-then-elseif<BR></a>
+                <a href="#simpleloop">4. SIMPLE LOOP<BR></a>
+                    <a href="#whileloop">5. WHILE LOOP<BR></a>
+                        <a href="#forloop">6. FOR LOOP<BR></a>
+            
+             
+        </p>
+</div>
+          <div class="thumbnail">
+<img src="images/bakground.jpg" alt="laptop image" class="imgfluid" >
+</div>
+
+</section>
+
+
+<section class="section">
+    <div class="para">
+    <p class="sectiontag text-big"><a name="if">1. IF THEN</a></p>
+    <p class="sectionsubtag text-small"><br><br>
+        IF statement check condition and transfer the execution flow on that 
+        matched block depending on a condition. IF statement execute or skip a sequence of one or more statements.  
+<br><br><br>
+
+Syntax:<br><br>
+
+ IF condition THEN {...statements to execute when condition is TRUE...} <br>ELSE {...statements to
+     execute when condition is FALSE...}<BR> END IF; <br><br><br>
+
+Here is an example <br>
+
+        input:-<br>
+        <img src="images/ifthen.png" alt="laptop image"  >
+        <br>
+        <br>output:-
+        <br> <img src="images/outputifthen.png" alt="laptop image"  >
+        
+        
+
+
+    </p>
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="ifelse">2. IF-THEN-ELSE</a></p>
+    <p class="sectionsubtag text-small"><br>
+        If the condition evaluates to TRUE, then the statements between THEN and ELSE execute.<br> 
+        In case the condition evaluates to FALSE or NULL, the else_statements between ELSE and END IF executes.<br><br>
+         syntax:-IF condition THEN<br>
+         statements;<br>
+     ELSE<br>
+         else_statements;<br>
+     END IF;<br>
+     
+ 
+<br><br><br>
+Here is an example of this command:-<br><br>
+
+<br><br>
+input:-<br>
+        <img src="images/ifthenelseinput.png" alt="laptop image" ><br><br><br>
+        output:-<br>
+        <img src="images/ifthenelseoutput.png" alt="laptop image" >
+
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="ifelsethen">3. IF-THEN-ELSEIF</a></p>
+    <p class="sectionsubtag text-small"><br>
+        The IF-THEN-ELSIF statement allows you to choose between several alternatives.
+         An IF-THEN statement can be followed by an optional ELSIF...ELSE statement.
+          The ELSIF clause lets you add additional conditions<br><br>
+         syntax:-<br>IF ( condition-1 ) THEN<br>
+         statement-1;<br>
+     ELSIF ( condition-2 ) THEN<br>
+         statement-2;<br>
+     ELSIF ( condition-3 ) THEN<br>
+         statement-3; <br>   
+     ELSE<br>
+         statement;<br>
+     END IF<br>
+     
+ 
+<br><br><br>
+Here is an example of this command:-<br><br>
+
+<br><br>
+<br>
+        <img src="images/ifthenelseif.png" alt="laptop image" ><br><br><br>
+       
+
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="simpleloop">4. SIMPLE LOOP</a></p>
+    <p class="sectionsubtag text-small"><br>
+        Basic loop structure encloses sequence of statements in between the LOOP and END LOOP statements. With each iteration,
+         the sequence of statements is executed and then control
+         resumes at the top of the loop.<br><br>
+         syntax:-<br>
+         LOOP <br>
+   Sequence of statements; <br>
+END LOOP; <br>
+     
+ 
+<br><br><br>
+Here is an example of this command:-<br><br>
+
+<br><br>
+input:-<br>
+        <img src="images/basicloopinput.png" alt="laptop image" ><br><br><br>
+        output:-<br>
+        <img src="images/basicloopoutput.png" alt="laptop image" >
+
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="whileloop">5. WHILE LOOP</a></p>
+    <p class="sectionsubtag text-small"><br>
+        PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, the While loop is used. 
+        The condition is decided at the beginning of each iteration and continues until the condition becomes false.<br><br>
+         syntax:-<br>
+         Syntax of while loop:<br> WHILE <condition> <br>LOOP statements; <br>END LOOP;
+     
+ 
+<br><br><br>
+Here is an example of this command:-<br><br>
+
+<br><br>
+input:-<br>
+        <img src="images/whileloopinput.png" alt="laptop image" ><br><br><br>
+        output:-<br>
+        <img src="images/whileloopoutput.png" alt="laptop image" >
+
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+<section class="section1" >
+    <div class="para">
+    <p class="sectiontag text-big"><a name="forloop">6. FOR LOOP</a></p>
+    <p class="sectionsubtag text-small"><br>
+        With each iteration of the FOR LOOP statement, its statements run, its index is either incremented or decremented, and control returns
+         to the top of the loop. The FOR LOOP statement ends when its index reaches a specified value, or when a statement inside the loop 
+         transfers control outside the loop or raises an exception.
+
+<br><br>
+         syntax:-<br>
+         FOR loop_counter IN [REVERSE] lowest_number.. highest_number LOOP {...statements...} <br>END LOOP;
+     
+ 
+<br><br><br>
+Here is an example of this command:-<br><br>
+
+<br><br>
+input:-<br>
+        <img src="images/forloopinput.png" alt="laptop image" ><br><br><br>
+        output:-<br>
+        <img src="images/forloopoutput.png" alt="laptop image" >
+
+    </p>
+    
+</div>
+          <div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section class="contact" id="contact" >
+<h3>contact us</h3>
+<a href="https://www.instagram.com/anshusinghsamiyal/"><img src="images/instagram.jpeg" width="150" height="94"></a>&nbsp;
+
+<a href="https://www.facebook.com/anshu.samiyal"><img src="images/facebook.jpeg" width="150" height="94"></a>
+<br>
+instagram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facebook
+    
+</div>   
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<a name="about">
+    <footer>
+        <footer class="footer background">
+        copyright &copy; 2023 www.samiyalsql.com - all right reserved
+        
+        </footer></a>
+    <Script src="JS/responsive.js"></Script>
+
+
+</body>
+
+</html>
